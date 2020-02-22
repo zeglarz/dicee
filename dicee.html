@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <style>
+           #starfield {
+               width:100%;
+               height:100%;
+               z-index: -1;
+               position: absolute;
+               left: 0px;
+               top: 0px;
+           }
+       </style>
+  </head>
+  <body>
+    <div id="starfield"></div>
+    <div class="container">
+      <h1>Refresh Me</h1>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img class="img1" src="">
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img class="img2" src="">
+      </div>
+    <div class="btn">
+<button id="refresher" value="Refresh Page" onClick="window.location.reload();">Roll a dice</button>
+    </div>
+    </div>
+
+  <script src="script.js"> </script>
+  <script src="starfield.js" charset="utf-8"></script>
+  <script type="text/javascript">
+        var container = document.getElementById('starfield');
+         var starfield = new Starfield();
+         starfield.initialise(container);
+         starfield.start();
+  </script>
+  </body>
+
+  <footer>
+    www 🎲 konrad rudnicki 🎲 ml
+  </footer>
+</html>
